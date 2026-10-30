@@ -1,0 +1,8 @@
+{
+  "name": "skribbl-clone",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {"install:all": "npm install && npm --prefix client install", "dev": "concurrently \"npm run server\" \"npm run client\"", "server": "node server.js", "client": "npm --prefix client run dev", "start": "node server.js"},
+  "dependencies": {"cors": "^2.8.5", "express": "^4.21.2", "socket.io": "^4.8.1"},
+  "devDependencies": {"concurrently": "^9.1.2"}
+}
