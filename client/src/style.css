@@ -7,3 +7,22 @@
 @media(max-width:480px){.settings-grid{grid-template-columns:1fr}.settings-grid label{display:grid;grid-template-columns:75px 1fr;align-items:center}.settings-grid select{padding:10px}}
 
 .settings-help,.join-help{font-size:10px;line-height:1.5;color:#85869a;background:#f7f6ff;border:1px solid #eeebff;border-radius:8px;padding:9px 10px;margin:2px 0 4px}.join-help{margin:-8px 0 10px;background:transparent;border:0;padding:0}
+
+/* --- additions: kick, lobby settings, leaderboard, private chat --- */
+.kick-btn{border:0;background:#fff0f0;color:#d64545;border-radius:7px;padding:5px;display:flex;cursor:pointer}
+.kick-btn:hover{background:#ffdede}
+.lobby-summary{font-size:10px;color:#8d8da1;margin:-8px 0 14px;text-transform:capitalize}
+.lobby-notice .dark-btn{margin-bottom:10px}
+.lobby-settings{width:100%;max-width:520px;text-align:left;margin:0 0 12px;padding:12px;background:#faf9ff;border-radius:12px}
+.leaderboard{list-style:none;padding:0;margin:0 0 18px;width:100%;max-width:340px;display:flex;flex-direction:column;gap:6px}
+.leaderboard li{display:flex;align-items:center;gap:10px;background:#f6f4ff;border-radius:9px;padding:9px 12px;font-size:12px}
+.leaderboard li span{color:#6b5ce7;font-weight:700;width:26px}
+.leaderboard li b{flex:1;text-align:left}
+.leaderboard li em{font-style:normal;font-weight:700}
+.round-gains{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.round-gains em{font-style:normal;font-size:11px;color:#2f9e5b;font-weight:700}
+.private-message{opacity:.75;border-left:3px solid #22c55e;padding-left:8px}
+.primary-btn:disabled,.dark-btn:disabled{opacity:.5;cursor:not-allowed}
+@media(max-width:720px){.lobby-settings .settings-grid{grid-template-columns:1fr}}
+.settings-grid input[type=number]{width:100%;min-width:0;border:1px solid #e5e5ef;border-radius:8px;background:#fff;padding:9px 5px;font-size:10px;color:#36364b;outline-color:#8c7af0}
+.reconnect-banner{background:#fff4e5;color:#b45309;text-align:center;font-size:12px;font-weight:700;padding:8px 12px;border-radius:10px;margin-bottom:10px}
